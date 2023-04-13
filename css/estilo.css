@@ -1,0 +1,190 @@
+/* Fonte: Roboto e Dosis */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Configuação padrão */
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+}
+
+/*Barra de navegação*/
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    margin-left: 10%;
+    flex: 20%;
+    /* border: 1px solid red; */
+    text-align: left;
+}
+.logo h1{
+    font-family: 'Dosis', sans-serif;
+    color: #4E31AA;
+    font-size: 32px;
+}
+
+.menu{
+    flex: 70%;
+    /* border: 1px solid red; */
+    text-align: right;
+    padding: 20px;
+}
+.menu a{
+    color: #4E31AA;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 26px;
+}
+.menu a:hover{
+    color: #2F58CD;
+    border-top: 4px solid #4E31AA;
+}
+
+#botao{
+    background: #4E31AA;
+    color: #F6F1F1;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+#botao:hover{
+    border: none;
+    background: #2F58CD;
+}
+
+/* Conteúdo Cabeçalho */
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.headline{
+    margin-left: 10%;
+    flex: 40%;
+    /* border: 1px solid black; */
+}
+.headline h2{
+    font-weight: 600px;
+    font-size: 30px;
+    color: #4E31AA;
+    padding: 0;
+    margin: 0;
+}
+.headline p{
+    color: gray;
+    text-align: left;
+}
+
+.btn-contact{
+    background: #2F58CD;
+    padding: 20px;
+    color: #F6F1F1;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+}
+.btn-contact:hover{
+    background: #4E31AA;
+}
+/* Imagem Cabeçalho */
+.img-headline{
+    margin-right: 10%;
+    flex: 40%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+/* Seção de Conteúdo */
+section{
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+    text-align: center;
+    padding: 5%;
+}
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    color: #4E31AA;
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #2F58CD;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    background: #2F58CD;
+    color: #F6F1F1;
+    padding: 40px;
+}
+.card:hover img{
+    display: none;
+}
+.card:hover .card-text{
+    display: none;
+}
+
+.card-oculto{
+    display: none;
+}
+.card:hover .card-oculto{
+    display: block;
+}
+
+/* Rodapé */
+footer{
+    margin-top: 100px;
+    height: 400px;
+    /* background-image: linear-gradient(180deg,#4E31AA,#1c0c52,#0b0327); */
+    background-image: linear-gradient(180deg,#2F58CD,#122f80,#061744);
+    /* border-top: 5px solid #2F58CD; */
+    border-top: 5px solid #4E31AA;
+    text-align: center;
+}
+.logo-rodape{
+    padding: 100px;
+}
+.h1-rodape{
+    font-family: 'Dosis', sans-serif;
+    color: #F6F1F1;
+    font-size: 32px;
+}
+
+.whats{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+}
